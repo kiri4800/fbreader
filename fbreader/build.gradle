@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId 'com.android.application'
+        minSdkVersion 16
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    buildFeatures{
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion build_tools_version
+}
+
+dependencies{
+    implementation 'com.android.support.constraint:constraint-layout'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':fbreader_extras')
+    implementation project(':fbreader_styles')
+    implementation project(':fbreader_text_extras')
+    implementation 'com.android.databinding:viewbinding:8.0.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    implementation 'org.fbreader:book:1.1.4'
+    implementation 'org.fbreader:config_client:1.1.4'
+    implementation 'org.fbreader:config_provider:1.1.4'
+    implementation 'org.fbreader:filesystem:1.1.4'
+    implementation 'org.fbreader:fontentry:1.1.4'
+    implementation 'org.fbreader:format_interface:1.1.4'
+    implementation 'org.fbreader:image:1.1.4'
+    implementation "com.android.support:multidex:1.0.3"
+    implementation 'org.fbreader:intent:1.1.4'
+    implementation 'org.fbreader:language:1.1.4'
+    implementation 'org.fbreader:loader:1.1.4'
+    implementation 'org.fbreader:options:1.1.4'
+    implementation 'org.fbreader:text_client:1.1.4'
+    implementation 'org.fbreader:text_provider:1.1.4'
+    implementation 'org.fbreader:text_util:1.1.4'
+    implementation 'org.fbreader:text_view:1.1.4'
+    implementation 'org.fbreader:toc:1.1.4'
+    implementation 'org.fbreader:util:1.1.4'
+    implementation 'org.fbreader:view:1.1.4'
+    implementation 'androidx.multidex:multidex: 2.0.1'
+    implementation 'org.fbreader:vimgadgets:1.1.4'
+    implementation 'org.fbreader:zip-amse:1.1.4'
+    implementation 'com.google.android.material:material:1.8.0'
+}

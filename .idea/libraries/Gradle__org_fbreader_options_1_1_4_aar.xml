@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.fbreader:options:1.1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6a1c950851c386cb01e5b682975ee740/transformed/jetified-options-1.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6a1c950851c386cb01e5b682975ee740/transformed/jetified-options-1.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6a1c950851c386cb01e5b682975ee740/transformed/jetified-options-1.1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

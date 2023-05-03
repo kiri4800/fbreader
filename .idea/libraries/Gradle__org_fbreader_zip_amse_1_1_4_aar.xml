@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.fbreader:zip-amse:1.1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a0f66307c8769ea009a0be9d763f1c27/transformed/jetified-zip-amse-1.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a0f66307c8769ea009a0be9d763f1c27/transformed/jetified-zip-amse-1.1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

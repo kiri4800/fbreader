@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\dmitr\\AndroidStudioProjects\\sdk\\samples\\single\\build\\intermediates\\merged_res\\debug\\layout_main.xml.flat",
+        "source": "C:\\Users\\dmitr\\AndroidStudioProjects\\sdk\\samples\\single\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dmitr\\AndroidStudioProjects\\sdk\\samples\\single\\build\\intermediates\\merged_res\\debug\\layout_cover.xml.flat",
+        "source": "C:\\Users\\dmitr\\AndroidStudioProjects\\sdk\\samples\\single\\src\\main\\res\\layout\\cover.xml"
+    },
+    {
+        "merged": "C:\\Users\\dmitr\\AndroidStudioProjects\\sdk\\samples\\single\\build\\intermediates\\merged_res\\debug\\menu_app.xml.flat",
+        "source": "C:\\Users\\dmitr\\AndroidStudioProjects\\sdk\\samples\\single\\src\\main\\res\\menu\\app.xml"
+    }
+]

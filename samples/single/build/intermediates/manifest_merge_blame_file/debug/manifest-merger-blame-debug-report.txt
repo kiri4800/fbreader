@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.fbreader.sample.single"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14
+15    <permission
+15-->[androidx.core:core:1.9.0] C:\Users\dmitr\.gradle\caches\transforms-3\6558d85d80e42c85cf96b6fd63c1cf46\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+16        android:name="org.fbreader.sample.single.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.9.0] C:\Users\dmitr\.gradle\caches\transforms-3\6558d85d80e42c85cf96b6fd63c1cf46\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.9.0] C:\Users\dmitr\.gradle\caches\transforms-3\6558d85d80e42c85cf96b6fd63c1cf46\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="org.fbreader.sample.single.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.9.0] C:\Users\dmitr\.gradle\caches\transforms-3\6558d85d80e42c85cf96b6fd63c1cf46\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\dmitr\.gradle\caches\transforms-3\6558d85d80e42c85cf96b6fd63c1cf46\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:6:2-20:16
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\dmitr\.gradle\caches\transforms-3\6558d85d80e42c85cf96b6fd63c1cf46\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:label="Single book demo"
+24-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:7:3-35
+25        android:resizeableActivity="true"
+25-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:8:3-36
+26        android:testOnly="true" >
+27        <activity
+27-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:10:3-19:14
+28            android:name="org.fbreader.sample.single.MainActivity"
+28-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:11:4-32
+29            android:configChanges="orientation|keyboardHidden|screenSize"
+29-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:13:4-65
+30            android:exported="true"
+30-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:14:4-27
+31            android:theme="@style/Theme.AppCompat.Light" >
+31-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:12:4-48
+32            <intent-filter>
+32-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:15:4-18:20
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:16:5-56
+33-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:16:13-54
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:17:5-64
+35-->C:\Users\dmitr\AndroidStudioProjects\sdk\samples\single\src\main\AndroidManifest.xml:17:15-62
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[org.fbreader:config_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\0a834adcfefd1e271cceede537d01353\transformed\jetified-config_provider-1.1.4\AndroidManifest.xml:12:9-17:44
+40            android:name="org.fbreader.config.ConfigProvider"
+40-->[org.fbreader:config_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\0a834adcfefd1e271cceede537d01353\transformed\jetified-config_provider-1.1.4\AndroidManifest.xml:13:13-62
+41            android:authorities="org.fbreader.sample.single.config"
+41-->[org.fbreader:config_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\0a834adcfefd1e271cceede537d01353\transformed\jetified-config_provider-1.1.4\AndroidManifest.xml:14:13-58
+42            android:enabled="true"
+42-->[org.fbreader:config_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\0a834adcfefd1e271cceede537d01353\transformed\jetified-config_provider-1.1.4\AndroidManifest.xml:15:13-35
+43            android:exported="true"
+43-->[org.fbreader:config_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\0a834adcfefd1e271cceede537d01353\transformed\jetified-config_provider-1.1.4\AndroidManifest.xml:16:13-36
+44            android:multiprocess="false" />
+44-->[org.fbreader:config_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\0a834adcfefd1e271cceede537d01353\transformed\jetified-config_provider-1.1.4\AndroidManifest.xml:17:13-41
+45        <provider
+45-->[org.fbreader:text_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\91501f89f0b6b1ec9d33309ce49d41d7\transformed\jetified-text_provider-1.1.4\AndroidManifest.xml:12:9-17:44
+46            android:name="org.fbreader.text.TextProvider"
+46-->[org.fbreader:text_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\91501f89f0b6b1ec9d33309ce49d41d7\transformed\jetified-text_provider-1.1.4\AndroidManifest.xml:13:13-58
+47            android:authorities="org.fbreader.sample.single.text"
+47-->[org.fbreader:text_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\91501f89f0b6b1ec9d33309ce49d41d7\transformed\jetified-text_provider-1.1.4\AndroidManifest.xml:14:13-56
+48            android:enabled="true"
+48-->[org.fbreader:text_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\91501f89f0b6b1ec9d33309ce49d41d7\transformed\jetified-text_provider-1.1.4\AndroidManifest.xml:15:13-35
+49            android:exported="true"
+49-->[org.fbreader:text_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\91501f89f0b6b1ec9d33309ce49d41d7\transformed\jetified-text_provider-1.1.4\AndroidManifest.xml:16:13-36
+50            android:multiprocess="false" />
+50-->[org.fbreader:text_provider:1.1.4] C:\Users\dmitr\.gradle\caches\transforms-3\91501f89f0b6b1ec9d33309ce49d41d7\transformed\jetified-text_provider-1.1.4\AndroidManifest.xml:17:13-41
+51        <provider
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+53            android:authorities="org.fbreader.sample.single.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dmitr\.gradle\caches\transforms-3\46f07aaf913ef2581d8d111e6f3069ef\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\dmitr\.gradle\caches\transforms-3\894800abe3b1f620a64d2417405b2fbf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\dmitr\.gradle\caches\transforms-3\894800abe3b1f620a64d2417405b2fbf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\dmitr\.gradle\caches\transforms-3\894800abe3b1f620a64d2417405b2fbf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+61        </provider>
+62    </application>
+63
+64</manifest>

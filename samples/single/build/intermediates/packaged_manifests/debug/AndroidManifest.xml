@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.fbreader.sample.single"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="33" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="org.fbreader.sample.single.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="org.fbreader.sample.single.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:label="Single book demo"
+        android:resizeableActivity="true"
+        android:testOnly="true" >
+        <activity
+            android:name="org.fbreader.sample.single.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="org.fbreader.config.ConfigProvider"
+            android:authorities="org.fbreader.sample.single.config"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false" />
+        <provider
+            android:name="org.fbreader.text.TextProvider"
+            android:authorities="org.fbreader.sample.single.text"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="org.fbreader.sample.single.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>

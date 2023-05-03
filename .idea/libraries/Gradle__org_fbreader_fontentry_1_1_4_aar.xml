@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.fbreader:fontentry:1.1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e21ead5e9f86ff80d9535156203f335b/transformed/jetified-fontentry-1.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e21ead5e9f86ff80d9535156203f335b/transformed/jetified-fontentry-1.1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

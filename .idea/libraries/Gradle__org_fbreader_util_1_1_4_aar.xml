@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.fbreader:util:1.1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/81b47934b78e3daae31820bfc8de5484/transformed/jetified-util-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/81b47934b78e3daae31820bfc8de5484/transformed/jetified-util-1.1.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/81b47934b78e3daae31820bfc8de5484/transformed/jetified-util-1.1.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

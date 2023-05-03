@@ -1,0 +1,11 @@
+include ':app'
+include 'fbreader_extras'
+project(':fbreader_extras').projectDir = new File('fbreader/extras')
+include 'fbreader_styles'
+project(':fbreader_styles').projectDir = new File('fbreader/styles')
+include 'fbreader_text_extras'
+project(':fbreader_text_extras').projectDir = new File('fbreader/text_extras')
+//include 'sample_single'
+//project(':sample_single').projectDir = new File('samples/single')
+include ':fbreader'
+project(':fbreader').projectDir = new File('fbreader')

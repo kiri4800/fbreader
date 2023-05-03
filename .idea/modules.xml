@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/sdk.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/sdk.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/sdk.fbreader.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/extras/sdk.fbreader_extras.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/styles/sdk.fbreader_styles.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fbreader/text_extras/sdk.fbreader_text_extras.unitTest.iml" />
+    </modules>
+  </component>
+</project>

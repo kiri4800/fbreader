@@ -1,0 +1,6696 @@
+<api>
+<package name="org.fbreader.book"
+>
+<class name="AbstractBook"
+ extends="<any>"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="addAuthor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="author" type="Author">
+</parameter>
+</method>
+<method name="addAuthor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="sortKey" type="java.lang.String">
+</parameter>
+</method>
+<method name="addLabel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="Label">
+</parameter>
+</method>
+<method name="addNewLabel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="java.lang.String">
+</parameter>
+</method>
+<method name="addTag"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="Tag">
+</parameter>
+</method>
+<method name="addUid"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="addUid"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uid" type="UID">
+</parameter>
+</method>
+<method name="authors"
+ return="java.util.List&lt;Author&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="authorsString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="separator" type="java.lang.String">
+</parameter>
+</method>
+<method name="equals"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o" type="java.lang.Object">
+</parameter>
+</method>
+<method name="findLabel"
+ return="Label"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="getEncodingNoDetection"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getId"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLanguage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getProgress"
+ return="RationalNumber"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSeriesInfo"
+ return="SeriesInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hasLabel"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="hashCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isChanged"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="labels"
+ return="java.util.List&lt;Label&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="matches"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</method>
+<method name="matchesUid"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uid" type="UID">
+</parameter>
+</method>
+<method name="paths"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeAllAuthors"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeAllTags"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeLabel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="java.lang.String">
+</parameter>
+</method>
+<method name="removeLabel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="Label">
+</parameter>
+</method>
+<method name="setEncoding"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLanguage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="language" type="java.lang.String">
+</parameter>
+</method>
+<method name="setProgress"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="progress" type="RationalNumber">
+</parameter>
+</method>
+<method name="setProgressWithNoCheck"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="progress" type="RationalNumber">
+</parameter>
+</method>
+<method name="setSeriesInfo"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="index" type="java.lang.String">
+</parameter>
+</method>
+<method name="setSeriesInfo"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="index" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method name="setTitle"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="title" type="java.lang.String">
+</parameter>
+</method>
+<method name="tags"
+ return="java.util.List&lt;Tag&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="tagsString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="separator" type="java.lang.String">
+</parameter>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="uids"
+ return="java.util.List&lt;UID&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="updateFilesFrom"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="book" type="org.fbreader.book.AbstractBook">
+</parameter>
+</method>
+<method name="updateFrom"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="book" type="org.fbreader.book.AbstractBook">
+</parameter>
+<parameter name="state" type="int">
+</parameter>
+<parameter name="force" type="boolean">
+</parameter>
+</method>
+<field name="FAVORITE_LABEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;favorite&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HasBookmark"
+ type="boolean"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="READ_LABEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;read&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SYNCHRONISED_LABEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sync-success&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SYNC_DELETED_LABEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sync-deleted&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SYNC_FAILURE_LABEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sync-failure&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SYNC_TOSYNC_LABEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sync-tosync&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="myAuthors"
+ type="java.util.List"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myChangedInfo"
+ type="int"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myEncoding"
+ type="java.lang.String"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myId"
+ type="long"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myLabels"
+ type="java.util.List"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myLanguage"
+ type="java.lang.String"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myProgress"
+ type="RationalNumber"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="mySeriesInfo"
+ type="SeriesInfo"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myTags"
+ type="java.util.List"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="myUids"
+ type="java.util.List"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<interface name="AbstractBook.InfoType"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="Authors"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Encoding"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="8"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Everything"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2047"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Files"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HasBookmark"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1024"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Headers"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="14"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Labels"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="512"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Language"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Metainfo"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="254"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Nothing"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="0"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Progress"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="256"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Series"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="128"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Tags"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="32"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Title"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Uids"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="64"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</interface>
+<class name="Book"
+ extends="org.fbreader.book.AbstractBook"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Book"
+ type="org.fbreader.book.Book"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="long">
+</parameter>
+<parameter name="paths" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="title" type="java.lang.String">
+</parameter>
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+<parameter name="language" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="forceUpdateFrom"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+</method>
+<method name="paths"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removePath"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method name="updateFilesFrom"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="book" type="org.fbreader.book.AbstractBook">
+</parameter>
+</method>
+<method name="updateFrom"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+</method>
+</class>
+<class name="BookLoader"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BookLoader"
+ type="org.fbreader.book.BookLoader"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="fromFile"
+ return="org.fbreader.book.Book"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="id" type="long">
+</parameter>
+<exception name="BookException" type="org.fbreader.format.BookException">
+</exception>
+</method>
+</class>
+<class name="Bookmark"
+ extends="org.fbreader.text.FixedPosition"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Bookmark"
+ type="org.fbreader.book.Bookmark"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookId" type="long">
+</parameter>
+<parameter name="original" type="org.fbreader.book.Bookmark">
+</parameter>
+</constructor>
+<constructor name="Bookmark"
+ type="org.fbreader.book.Bookmark"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="long">
+</parameter>
+<parameter name="uid" type="java.lang.String">
+</parameter>
+<parameter name="versionUid" type="java.lang.String">
+</parameter>
+<parameter name="bookId" type="long">
+</parameter>
+<parameter name="bookTitle" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="originalText" type="java.lang.String">
+</parameter>
+<parameter name="creationTimestamp" type="long">
+</parameter>
+<parameter name="modificationTimestamp" type="java.lang.Long">
+</parameter>
+<parameter name="accessTimestamp" type="java.lang.Long">
+</parameter>
+<parameter name="modelId" type="java.lang.String">
+</parameter>
+<parameter name="start_paragraphIndex" type="int">
+</parameter>
+<parameter name="start_elementIndex" type="int">
+</parameter>
+<parameter name="start_charIndex" type="int">
+</parameter>
+<parameter name="end_paragraphIndex" type="int">
+</parameter>
+<parameter name="end_elementIndex" type="int">
+</parameter>
+<parameter name="end_charIndex" type="int">
+</parameter>
+<parameter name="isVisible" type="boolean">
+</parameter>
+<parameter name="styleId" type="int">
+</parameter>
+</constructor>
+<constructor name="Bookmark"
+ type="org.fbreader.book.Bookmark"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+<parameter name="modelId" type="java.lang.String">
+</parameter>
+<parameter name="snippet" type="Snippet">
+</parameter>
+<parameter name="styleId" type="int">
+</parameter>
+<parameter name="visible" type="boolean">
+</parameter>
+</constructor>
+<method name="getEnd"
+ return="org.fbreader.text.Position"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getId"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLength"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOriginalText"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getStyleId"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getText"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTimestamp"
+ return="java.lang.Long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="org.fbreader.book.Bookmark.DateType">
+</parameter>
+</method>
+<method name="getVersionUid"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="markAsAccessed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setEnd"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="paragraphsIndex" type="int">
+</parameter>
+<parameter name="elementIndex" type="int">
+</parameter>
+<parameter name="charIndex" type="int">
+</parameter>
+</method>
+<method name="setId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="long">
+</parameter>
+</method>
+<method name="setStyleId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="styleId" type="int">
+</parameter>
+</method>
+<method name="setText"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+<method name="updateFrom"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="other" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<field name="BookId"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BookTitle"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CreationTimestamp"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ModelId"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Uid"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="isVisible"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="Bookmark.ByTimeComparator"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="java.util.Comparator">
+</implements>
+<constructor name="ByTimeComparator"
+ type="org.fbreader.book.Bookmark.ByTimeComparator"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bm0" type="org.fbreader.book.Bookmark">
+</parameter>
+<parameter name="bm1" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+</class>
+<class name="Bookmark.DateType"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="org.fbreader.book.Bookmark.DateType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="org.fbreader.book.Bookmark.DateType[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="org.fbreader.config"
+>
+<class name="BooleanOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="ConfigInterface"
+ extends="org.fbreader.config.Config"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="booleanOption"
+ return="org.fbreader.config.BooleanOption"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="boolean">
+</parameter>
+</method>
+<method name="enumOption"
+ return="org.fbreader.config.EnumOption&lt;T&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="T">
+</parameter>
+</method>
+<method name="instance"
+ return="org.fbreader.config.ConfigInterface"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="integerOption"
+ return="org.fbreader.config.IntegerOption"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method name="integerRangeOption"
+ return="org.fbreader.config.IntegerRangeOption"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="minValue" type="int">
+</parameter>
+<parameter name="maxValue" type="int">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method name="rgbOption"
+ return="org.fbreader.config.RGBOption"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="long">
+</parameter>
+</method>
+<method name="stringListOption"
+ return="org.fbreader.config.StringListOption"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="delimiter" type="java.lang.String">
+</parameter>
+</method>
+<method name="stringOption"
+ return="org.fbreader.config.StringOption"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="EnumOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="T">
+</parameter>
+</method>
+</class>
+<class name="IntegerOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="int">
+</parameter>
+</method>
+</class>
+<class name="IntegerRangeOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<field name="maxValue"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="minValue"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="Option"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Option"
+ type="org.fbreader.config.Option"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="config" type="org.fbreader.config.ConfigInterface">
+</parameter>
+<parameter name="group" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultStringValue" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getConfigValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="setConfigValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<field name="defaultStringValue"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="RGBOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="long">
+</parameter>
+</method>
+</class>
+<class name="StringListOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+</class>
+<class name="StringOption"
+ extends="org.fbreader.config.Option"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.extras.gesture"
+>
+<class name="GestureListenerBase"
+ extends="org.fbreader.widget.GestureListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="GestureListenerBase"
+ type="org.fbreader.extras.gesture.GestureListenerBase"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="widget" type="org.fbreader.widget.BaseWidget">
+</parameter>
+</constructor>
+<method name="isDoubleTapSupported"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="onFingerDoubleTap"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerEventCancelled"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="onFingerLongPress"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerMove"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerMoveAfterLongPress"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerPress"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerRelease"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerReleaseAfterLongPress"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerSingleTap"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onMissingEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method name="widget"
+ return="org.fbreader.widget.BaseWidget"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="org.fbreader.extras.info"
+>
+<class name="InfoUtil"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="InfoUtil"
+ type="org.fbreader.extras.info.InfoUtil"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="showInfo"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="android.view.View">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="colorLevel" type="java.lang.Integer">
+</parameter>
+</method>
+</class>
+<class name="InfoView"
+ extends="AppCompatTextView"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="InfoView"
+ type="org.fbreader.extras.info.InfoView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="InfoView"
+ type="org.fbreader.extras.info.InfoView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="InfoView"
+ type="org.fbreader.extras.info.InfoView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyleAttr" type="int">
+</parameter>
+</constructor>
+</class>
+</package>
+<package name="org.fbreader.extras.selection"
+>
+<class name="SelectionCursorUtil"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="SelectionCursorUtil"
+ type="org.fbreader.extras.selection.SelectionCursorUtil"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="drawCursor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.widget.BaseWidget">
+</parameter>
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+<parameter name="leftNotRight" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="SelectionPanelUtil"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="SelectionPanelUtil"
+ type="org.fbreader.extras.selection.SelectionPanelUtil"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="hidePanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="android.view.View">
+</parameter>
+</method>
+<method name="showPanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="android.view.View">
+</parameter>
+<parameter name="selectionRects" type="java.util.List&lt;android.graphics.Rect&gt;">
+</parameter>
+<parameter name="listener" type="android.view.View.OnClickListener">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.format"
+>
+<class name="BookException"
+ extends="java.lang.Exception"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BookException"
+ type="org.fbreader.format.BookException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="BookException"
+ type="org.fbreader.format.BookException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+</package>
+<package name="org.fbreader.image"
+>
+<interface name="StreamImage"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="inputStream"
+ return="java.io.InputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+</package>
+<package name="org.fbreader.text"
+>
+<class name="FixedPosition"
+ extends="org.fbreader.text.Position"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="FixedPosition"
+ type="org.fbreader.text.FixedPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="paragraphIndex" type="int">
+</parameter>
+<parameter name="elementIndex" type="int">
+</parameter>
+<parameter name="charIndex" type="int">
+</parameter>
+</constructor>
+<constructor name="FixedPosition"
+ type="org.fbreader.text.FixedPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</constructor>
+<method name="getCharIndex"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getElementIndex"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getParagraphIndex"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="CharIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ElementIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ParagraphIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="Position"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="java.lang.Comparable">
+</implements>
+<constructor name="Position"
+ type="org.fbreader.text.Position"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="compareTo"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<method name="compareToIgnoreChar"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<method name="getCharIndex"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getElementIndex"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getParagraphIndex"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="samePositionAs"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.text.entity"
+>
+<class name="BookmarkEntity"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.fbreader.text.entity.Entity">
+</implements>
+<constructor name="BookmarkEntity"
+ type="org.fbreader.text.entity.BookmarkEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</constructor>
+<field name="bookmark"
+ type="org.fbreader.book.Bookmark"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="Entity"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</interface>
+<interface name="Entity.Location"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="containingRects"
+ return="java.util.List&lt;android.graphics.Rect&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isVerticallyAligned"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<class name="HyperlinkEntity"
+ extends="org.fbreader.text.entity.StaticEntity"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HyperlinkEntity"
+ type="org.fbreader.text.entity.HyperlinkEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+<parameter name="hyperlink" type="Hyperlink">
+</parameter>
+</constructor>
+<field name="hyperlink"
+ type="Hyperlink"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ImageEntity"
+ extends="org.fbreader.text.entity.SimpleEntity"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ImageEntity"
+ type="org.fbreader.text.entity.ImageEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+<parameter name="element" type="ImageElement">
+</parameter>
+</constructor>
+<field name="image"
+ type="FileImage"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="SimpleEntity"
+ extends="org.fbreader.text.entity.StaticEntity"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="SimpleEntity"
+ type="org.fbreader.text.entity.SimpleEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</constructor>
+</class>
+<class name="StaticEntity"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.fbreader.text.entity.Entity">
+</implements>
+<constructor name="StaticEntity"
+ type="org.fbreader.text.entity.StaticEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="paragraphIndex" type="int">
+</parameter>
+<parameter name="startElementIndex" type="int">
+</parameter>
+<parameter name="endElementIndex" type="int">
+</parameter>
+</constructor>
+<method name="compareTo"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="entity" type="org.fbreader.text.entity.StaticEntity">
+</parameter>
+</method>
+<method name="compareTo"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<method name="contains"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="area" type="ElementArea">
+</parameter>
+</method>
+<method name="equals"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="other" type="java.lang.Object">
+</parameter>
+</method>
+<field name="endElementIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="paragraphIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="startElementIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="VideoEntity"
+ extends="org.fbreader.text.entity.SimpleEntity"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="VideoEntity"
+ type="org.fbreader.text.entity.VideoEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+<parameter name="element" type="VideoElement">
+</parameter>
+</constructor>
+<field name="sources"
+ type="java.util.Map"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="WordEntity"
+ extends="org.fbreader.text.entity.SimpleEntity"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="WordEntity"
+ type="org.fbreader.text.entity.WordEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+<parameter name="word" type="Word">
+</parameter>
+</constructor>
+<field name="string"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="org.fbreader.text.extras.controller"
+>
+<class name="AbstractTextBookController"
+ extends="org.fbreader.text.widget.TextBookController"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AbstractTextBookController"
+ type="org.fbreader.text.extras.controller.AbstractTextBookController"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+</constructor>
+<method name="defaultHighlightingStyleId"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="deleteBookmark"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="hiddenBookmarks"
+ return="java.util.List&lt;org.fbreader.book.Bookmark&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="highlightingStyles"
+ return="java.util.List&lt;HighlightingStyle&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isHyperlinkVisited"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="iterateVisibleBookmarks"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="consumer" type="org.fbreader.text.widget.TextBookController.BookmarksConsumer">
+</parameter>
+</method>
+<method name="markHyperlinkAsVisited"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="position"
+ return="org.fbreader.text.Position"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="saveBookmark"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="storePosition"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.text.extras.gesture"
+>
+<class name="GestureListenerImpl"
+ extends="org.fbreader.extras.gesture.GestureListenerBase"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="GestureListenerImpl"
+ type="org.fbreader.text.extras.gesture.GestureListenerImpl"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+</constructor>
+<method name="isBrightnessAdjustmentEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="isDoubleTapSupported"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="isFlickScrollingEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="onFingerDoubleTap"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerEventCancelled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="onFingerLongPress"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerMove"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerMoveAfterLongPress"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerPress"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerRelease"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerReleaseAfterLongPress"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onFingerSingleTap"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.text.extras.opener"
+>
+<class name="ExternalHyperlinkOpener"
+ extends="org.fbreader.text.widget.EntityOpener"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ExternalHyperlinkOpener"
+ type="org.fbreader.text.extras.opener.ExternalHyperlinkOpener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+</constructor>
+<method name="open"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="entity" type="org.fbreader.text.entity.Entity">
+</parameter>
+<parameter name="location" type="org.fbreader.text.entity.Entity.Location">
+</parameter>
+</method>
+</class>
+<class name="InternalHyperlinkOpener"
+ extends="org.fbreader.text.widget.EntityOpener"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="InternalHyperlinkOpener"
+ type="org.fbreader.text.extras.opener.InternalHyperlinkOpener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+</constructor>
+<method name="open"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="entity" type="org.fbreader.text.entity.Entity">
+</parameter>
+<parameter name="location" type="org.fbreader.text.entity.Entity.Location">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.text.extras.search"
+>
+<class name="TextSearchPanelListener"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.view.View.OnClickListener">
+</implements>
+<constructor name="TextSearchPanelListener"
+ type="org.fbreader.text.extras.search.TextSearchPanelListener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+</constructor>
+<method name="onClick"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class name="TextSearchUtil"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TextSearchUtil"
+ type="org.fbreader.text.extras.search.TextSearchUtil"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="hidePanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+</method>
+<method name="performSearch"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</method>
+<method name="updatePanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+</method>
+</class>
+<class name="TextSearchUtil.SearchTask"
+ extends="<any>"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="SearchTask"
+ type="org.fbreader.text.extras.search.TextSearchUtil.SearchTask"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="doInBackground"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="params" type="java.lang.Void...">
+</parameter>
+</method>
+<method name="onPostExecute"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="result" type="java.lang.Boolean">
+</parameter>
+</method>
+<method name="onPreExecute"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+</class>
+</package>
+<package name="org.fbreader.text.info"
+>
+<class name="CoverHelper"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getCover"
+ return="org.fbreader.image.StreamImage"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+</method>
+<method name="instance"
+ return="org.fbreader.text.info.CoverHelper"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+</class>
+</package>
+<package name="org.fbreader.text.view"
+>
+<class name="Region"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.fbreader.text.entity.Entity.Location">
+</implements>
+<method name="containingRects"
+ return="java.util.List&lt;android.graphics.Rect&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isVerticallyAligned"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="typeFilter"
+ return="org.fbreader.text.view.Region.Predicate"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="types" type="java.lang.Class&lt;? extends org.fbreader.text.entity.Entity&gt;...">
+</parameter>
+</method>
+<field name="entity"
+ type="org.fbreader.text.entity.StaticEntity"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="Region.Predicate"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="test"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="region" type="org.fbreader.text.view.Region">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="org.fbreader.text.view.style"
+>
+<class name="BaseStyle"
+ extends="Style"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BaseStyle"
+ type="org.fbreader.text.view.style.BaseStyle"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="allowHyphenations"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="color"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="profile" type="org.fbreader.view.options.ColorProfile">
+</parameter>
+<parameter name="visited" type="boolean">
+</parameter>
+</method>
+<method name="getAlignment"
+ return="AlignmentType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFirstLineIndent"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getFontEntries"
+ return="java.util.List&lt;FontEntry&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFontSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFontSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getLeftMargin"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getLeftPadding"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getLineSpacePercent"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRightMargin"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getRightPadding"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getSpaceAfter"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getSpaceBefore"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="getVerticalAlign"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="metrics" type="TextMetrics">
+</parameter>
+</method>
+<method name="isBold"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isHidden"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isItalic"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isStrikeThrough"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isUnderline"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isVerticallyAligned"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="alignment"
+ type="org.fbreader.config.IntegerRangeOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="autoHyphenation"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="bold"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="defaultFontSize"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="fontFamily"
+ type="org.fbreader.config.StringOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="fontSize"
+ type="org.fbreader.config.IntegerRangeOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="italic"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="lineSpace"
+ type="org.fbreader.config.IntegerRangeOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="strikeThrough"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="underline"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="useCSSFontFamily"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="useCSSFontSize"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="useCSSMargins"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="useCSSTextAlignment"
+ type="org.fbreader.config.BooleanOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="org.fbreader.text.widget"
+>
+<class name="EntityOpener"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EntityOpener"
+ type="org.fbreader.text.widget.EntityOpener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="widget" type="org.fbreader.text.widget.TextWidget">
+</parameter>
+<parameter name="clz" type="java.lang.Class&lt;? extends org.fbreader.text.entity.Entity&gt;">
+</parameter>
+</constructor>
+<method name="accepts"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="entity" type="org.fbreader.text.entity.Entity">
+</parameter>
+</method>
+<method name="open"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="entity" type="org.fbreader.text.entity.Entity">
+</parameter>
+<parameter name="location" type="org.fbreader.text.entity.Entity.Location">
+</parameter>
+</method>
+<method name="openAt"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="openRegion"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="region" type="org.fbreader.text.view.Region">
+</parameter>
+</method>
+<field name="widget"
+ type="org.fbreader.text.widget.TextWidget"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="TextBookController"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TextBookController"
+ type="org.fbreader.text.widget.TextBookController"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+</constructor>
+<method name="defaultHighlightingStyleId"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="deleteBookmark"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="hiddenBookmarks"
+ return="java.util.List&lt;org.fbreader.book.Bookmark&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="highlightingStyles"
+ return="java.util.List&lt;HighlightingStyle&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isHyperlinkVisited"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="iterateVisibleBookmarks"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="consumer" type="org.fbreader.text.widget.TextBookController.BookmarksConsumer">
+</parameter>
+</method>
+<method name="markHyperlinkAsVisited"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="position"
+ return="org.fbreader.text.Position"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="saveBookmark"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="storePosition"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<field name="applicationContext"
+ type="android.content.Context"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="book"
+ type="org.fbreader.book.Book"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="TextBookController.BookmarksConsumer"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="accept"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmarks" type="java.util.List&lt;org.fbreader.book.Bookmark&gt;">
+</parameter>
+</method>
+</interface>
+<class name="TextWidget"
+ extends="org.fbreader.widget.BaseWidget"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TextWidget"
+ type="org.fbreader.text.widget.TextWidget"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor name="TextWidget"
+ type="org.fbreader.text.widget.TextWidget"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="TextWidget"
+ type="org.fbreader.text.widget.TextWidget"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method name="addBookmarkFromSelection"
+ return="org.fbreader.book.Bookmark"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="addBookmarkFromSelection"
+ return="org.fbreader.book.Bookmark"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="data" type="SelectionData">
+</parameter>
+</method>
+<method name="baseStyle"
+ return="org.fbreader.text.view.style.BaseStyle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="book"
+ return="org.fbreader.book.Book"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="canFindNext"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="canFindPrevious"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="canTurnTo"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="index" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="cancelTouchFeedback"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="captureSelectionCursorAt"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="clearSearchResults"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="clearSelection"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="clearTextCaches"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="controller"
+ return="org.fbreader.text.widget.TextBookController"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="createBookmark"
+ return="org.fbreader.book.Bookmark"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="maxChars" type="int">
+</parameter>
+<parameter name="visible" type="boolean">
+</parameter>
+</method>
+<method name="createController"
+ return="org.fbreader.text.widget.TextBookController"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+</method>
+<method name="currentPosition"
+ return="org.fbreader.text.Position"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="org.fbreader.text.widget.TextWidget.ContentType">
+</parameter>
+</method>
+<method name="currentTOCElement"
+ return="TOCTree"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="currentTOCReference"
+ return="java.lang.Integer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="deactivateSelection"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="extensionManager"
+ return="ExtensionElementManager"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="findClosest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="findHighlighting"
+ return="Highlighting"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="findNext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="findPrevious"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="findRegion"
+ return="org.fbreader.text.view.Region"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="footnoteData"
+ return="AutoTextSnippet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="getCountOfSelectedWords"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFooter"
+ return="FooterBase"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSelectedText"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="gotoBookmark"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="gotoBookmark"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+<parameter name="exactly" type="boolean">
+</parameter>
+</method>
+<method name="gotoPage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pageNo" type="int">
+</parameter>
+</method>
+<method name="gotoPosition"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<method name="hasSearchResults"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initSelectionAt"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="isMainContentSelected"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="jumpBack"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="jumpFrom"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<method name="jumpTo"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+</method>
+<method name="jumpToFootnote"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method name="moveSelectionCursorTo"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="onAnimationEnd"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="index" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="onScrollingFinished"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pageIndex" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="openBookmark"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="openEntity"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="region" type="org.fbreader.text.view.Region">
+</parameter>
+</method>
+<method name="openersFor"
+ return="java.util.List&lt;org.fbreader.text.widget.EntityOpener&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="classes" type="java.lang.Class&lt;? extends org.fbreader.text.entity.Entity&gt;...">
+</parameter>
+</method>
+<method name="pageInText"
+ return="org.fbreader.view.PageInText"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="pageMap"
+ return="java.util.HashMap&lt;java.lang.Integer, java.lang.Integer&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="toc" type="org.fbreader.toc.TableOfContents">
+</parameter>
+</method>
+<method name="registerOpener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="opener" type="org.fbreader.text.widget.EntityOpener">
+</parameter>
+</method>
+<method name="releaseSelectionCursor"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="reloadBookmarks"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="renderer"
+ return="BitmapManager.Renderer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="index" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="returnToMainContent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="scrollManuallyTo"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="search"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</method>
+<method name="selectionData"
+ return="SelectionData"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setBook"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+<exception name="BookException" type="org.fbreader.format.BookException">
+</exception>
+</method>
+<method name="setBook"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="book" type="org.fbreader.book.Book">
+</parameter>
+<parameter name="position" type="org.fbreader.text.Position">
+</parameter>
+<exception name="BookException" type="org.fbreader.format.BookException">
+</exception>
+</method>
+<method name="showTouchFeedback"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="startAnimatedScrolling"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pageIndex" type="org.fbreader.util.PageIndex">
+</parameter>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="startAnimatedScrolling"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pageIndex" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="startAnimatedScrolling"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="startManualScrolling"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="styleCollection"
+ return="StyleCollection"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="tableOfContents"
+ return="org.fbreader.toc.TableOfContents"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="activeView"
+ type="View"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="bookTextView"
+ type="View"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="TextWidget.ContentType"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="org.fbreader.text.widget.TextWidget.ContentType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="org.fbreader.text.widget.TextWidget.ContentType[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="org.fbreader.toc"
+>
+<class name="TableOfContents"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TableOfContents"
+ type="org.fbreader.toc.TableOfContents"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="root" type="TOCTree">
+</parameter>
+</constructor>
+<method name="findTreeByReference"
+ return="TOCTree"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="reference" type="int">
+</parameter>
+</method>
+<method name="read"
+ return="org.fbreader.toc.TableOfContents"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method name="readAndClose"
+ return="org.fbreader.toc.TableOfContents"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="reader" type="java.io.Reader">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method name="save"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="path"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="root"
+ type="TOCTree"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="org.fbreader.util"
+>
+<class name="IOUtil"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="IOUtil"
+ type="org.fbreader.util.IOUtil"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="closeQuietly"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="c" type="java.io.Closeable">
+</parameter>
+</method>
+<method name="copyToDir"
+ return="java.io.File"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="dstDir" type="java.io.File">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="copyToFile"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="to" type="java.lang.String">
+</parameter>
+</method>
+<method name="copyToFile"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="to" type="java.io.File">
+</parameter>
+</method>
+<method name="log2File"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+<method name="log2File"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<parameter name="exc" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="readToUtf8String"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method name="readToUtf8String"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+</method>
+<method name="write2File"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="PageIndex"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getNext"
+ return="org.fbreader.util.PageIndex"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPrevious"
+ return="org.fbreader.util.PageIndex"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="valueOf"
+ return="org.fbreader.util.PageIndex"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="org.fbreader.util.PageIndex[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="Pair"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Pair"
+ type="org.fbreader.util.Pair"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="first" type="T1">
+</parameter>
+<parameter name="second" type="T2">
+</parameter>
+</constructor>
+<field name="first"
+ type="T1"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="second"
+ type="T2"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ViewUtil"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ViewUtil"
+ type="org.fbreader.util.ViewUtil"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="findCachedView"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="container" type="android.view.View">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method name="findContainingActivity"
+ return="android.app.Activity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method name="findContainingActivity"
+ return="android.app.Activity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="findView"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="container" type="android.view.View">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+<parameter name="supplier" type="org.fbreader.util.ViewUtil.Supplier&lt;T&gt;">
+</parameter>
+</method>
+<method name="findView"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="container" type="android.view.View">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+<parameter name="supplier" type="org.fbreader.util.ViewUtil.Supplier&lt;T&gt;">
+</parameter>
+<parameter name="cacheNull" type="boolean">
+</parameter>
+</method>
+<method name="findView"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="container" type="android.view.View">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method name="findView"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method name="setSubviewText"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="resourceId" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+</method>
+</class>
+<interface name="ViewUtil.Supplier"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="T"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+</package>
+<package name="org.fbreader.view"
+>
+<class name="PageInText"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PageInText"
+ type="org.fbreader.view.PageInText"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pageNo" type="int">
+</parameter>
+<parameter name="total" type="int">
+</parameter>
+</constructor>
+<field name="pageNo"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="total"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="org.fbreader.view.options"
+>
+<class name="ColorProfile"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="currentProfile"
+ return="org.fbreader.view.options.ColorProfile"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="get"
+ return="org.fbreader.view.options.ColorProfile"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="getWallpaperFile"
+ return="ZLFile"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="DAY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;__day__&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NIGHT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;__night__&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="applicationContext"
+ type="android.content.Context"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="background"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="cssDefined"
+ type="org.fbreader.config.EnumOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="fillMode"
+ type="org.fbreader.config.EnumOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="footerBackground"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="footerForeground"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="footerForegroundUnread"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="highlightingBackground"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="highlightingForeground"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="hyperlinkText"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="imageAdjusting"
+ type="org.fbreader.config.EnumOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="name"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="regularText"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="screenIndependentName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="selectionBackground"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="theme"
+ type="org.fbreader.view.options.ColorProfile.Theme"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="visitedHyperlinkText"
+ type="org.fbreader.config.RGBOption"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="wallpaper"
+ type="org.fbreader.view.options.ColorProfile.StringOptionWrapper"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ColorProfile.StringOptionWrapper"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="ColorProfile.Theme"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="org.fbreader.view.options.ColorProfile.Theme"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="org.fbreader.view.options.ColorProfile.Theme[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ColorProfile.Usage"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="org.fbreader.view.options.ColorProfile.Usage"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="org.fbreader.view.options.ColorProfile.Usage[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="stringResourceId"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="org.fbreader.widget"
+>
+<class name="BaseWidget"
+ extends="android.view.View"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BaseWidget"
+ type="org.fbreader.widget.BaseWidget"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor name="BaseWidget"
+ type="org.fbreader.widget.BaseWidget"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="BaseWidget"
+ type="org.fbreader.widget.BaseWidget"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method name="book"
+ return="org.fbreader.book.Book"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="bottomMargin"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="cancelTouchFeedback"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="clearView"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="colorProfile"
+ return="org.fbreader.view.options.ColorProfile"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="colorProfile"
+ return="org.fbreader.view.options.ColorProfile"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="createGestureListener"
+ return="org.fbreader.widget.GestureListener"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="createPainter"
+ return="Painter"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="createPainterWithLog"
+ return="PainterWithLog"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="currentTOCReference"
+ return="java.lang.Integer"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="drawFooter"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="animator" type="AnimationProvider">
+</parameter>
+</method>
+<method name="drawScreenshot"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method name="drawSelectionCursor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+<parameter name="startNotEnd" type="boolean">
+</parameter>
+</method>
+<method name="footerOptions"
+ return="FooterOptions"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAnimationProvider"
+ return="AnimationProvider"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getAnimationType"
+ return="AnimationType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getBatteryLevel"
+ return="java.lang.Integer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBitmapManager"
+ return="BitmapManager"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getFooter"
+ return="Footer"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getMainAreaHeight"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getScreenBrightness"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="gotoBookmark"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bookmark" type="org.fbreader.book.Bookmark">
+</parameter>
+</method>
+<method name="hasTopCutout"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hidePopup"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hideProgressIndicator"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hideSelectionPanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="hideTextSearchPanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="isScrollbarShown"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="jumpBack"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="leftMargin"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onAnimationEnd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="index" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="onContentUpdated"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="pageInText"
+ return="org.fbreader.view.PageInText"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="pageMap"
+ return="java.util.HashMap&lt;java.lang.Integer, java.lang.Integer&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="toc" type="org.fbreader.toc.TableOfContents">
+</parameter>
+</method>
+<method name="point"
+ return="android.graphics.Point"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method name="progressIndicatorType"
+ return="ViewOptions.ProgressIndicatorType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="renderer"
+ return="BitmapManager.Renderer"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="index" type="org.fbreader.util.PageIndex">
+</parameter>
+</method>
+<method name="repaint"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="resetPageCache"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="rightMargin"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="screenY"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="searchInText"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</method>
+<method name="setBatteryLevel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="percent" type="int">
+</parameter>
+</method>
+<method name="setColorProfileName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="setPreserveSize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="preserve" type="boolean">
+</parameter>
+</method>
+<method name="setScreenBrightness"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="percent" type="int">
+</parameter>
+<parameter name="showPercent" type="boolean">
+</parameter>
+</method>
+<method name="showInfo"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+<method name="showPopup"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="showPopup"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messageId" type="int">
+</parameter>
+</method>
+<method name="showProgressIndicator"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="showSelectionPanel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="showTouchFeedback"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pt" type="android.graphics.Point">
+</parameter>
+</method>
+<method name="tableOfContents"
+ return="org.fbreader.toc.TableOfContents"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="topMargin"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="twoPagesMode"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="colorLevel"
+ type="java.lang.Integer"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="paint"
+ type="android.graphics.Paint"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="preserveSize"
+ type="boolean"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="preservedY"
+ type="int"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="GestureListener"
+ extends="android.view.GestureDetector.SimpleOnGestureListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.view.ScaleGestureDetector.OnScaleGestureListener">
+</implements>
+<constructor name="GestureListener"
+ type="org.fbreader.widget.GestureListener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onMissingEvent"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method name="onScale"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="detector" type="android.view.ScaleGestureDetector">
+</parameter>
+</method>
+<method name="onScaleBegin"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="detector" type="android.view.ScaleGestureDetector">
+</parameter>
+</method>
+<method name="onScaleEnd"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="detector" type="android.view.ScaleGestureDetector">
+</parameter>
+</method>
+</class>
+</package>
+</api>
